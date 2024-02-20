@@ -1,0 +1,156 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    align-items: center;
+}
+nav .links{
+    display: flex;
+    align-items: center;
+}
+nav .links p{
+    margin-right: 45px;
+    cursor: pointer;
+    transition: 0.12s ease;
+}
+nav .links p:hover{
+    color: rgb(242, 183, 0);
+}
+nav .links p.active{
+    color: rgb(242, 183, 0);
+}
+nav .subway-logo{
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+#main{
+    display: grid;
+}
+#main div{
+    display: grid;
+}
+#main .main-div{
+    justify-content: center;
+}
+#main img{
+    width: 654px;
+    height: 504px;
+    margin-top: 30px;
+    transform: scale(1.4);
+}
+#main .txt-container{
+    width: 100%;
+    /* border: 1px solid black; */
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+#main p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px;
+}
+#main p .line-1{
+    font-size: 50px;
+    width: 600px;
+    color: white;
+    text-align: center;
+}
+#main p .line-2{
+    width: 700px;
+    font-size: 63px;
+    color: rgb(242, 183, 0);
+    text-align: center;
+}
+
+#href{
+    margin-top: 120px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#href a{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: green;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.15s ease;
+}
+
+#href a:hover{
+    border: 2px solid rgb(242, 183, 0);
+    background-color: rgb(242, 183, 0);
+}
+
+
+/* subs page */
+
+#items{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 140px;
+}
+
+#items .item-box{
+    padding: 20px;
+    border: 1px solid rgb(218, 218, 218);
+    box-shadow: 0 0 10px 4px rgb(238, 238, 238);
+    border-radius: 8px;
+}
+#items .item-box img{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+#items .item-box button{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+#items .item-box p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#cart{
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    display: grid;
+    margin-bottom: 30px;
+}
+#cart h2{
+    text-align: center;
+}
+#cart .cart-box{
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px 20px;
+    width: 400px;
+}
+#cart button{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}

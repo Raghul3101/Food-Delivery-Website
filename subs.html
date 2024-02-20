@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Subway</title>
+            <script src="https://kit.fontawesome.com/c7c31fbd71.js" crossorigin="anonymous"></script>
+            <link rel="icon" href="subway_logo.webp" type="image/icon type">
+            <link rel="stylesheet" href="styles.css" type="text/css">
+            <script src="script.js"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <img src="subway.png" class="subway-logo" onclick="window.location.href = 'index.html'">
+            <div class="links">
+                <p class="active" onclick="window.location.href = 'subs.html'">Subs'</p>
+                <p onclick="document.getElementById('cart').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-bag-shopping"></i></p>
+            </div>
+        </nav>
+
+        <section id="items">
+            <div class="item-box">
+                <img src="sub2.avif">
+                <p>Delhi Tikki Sandwich - ₹<span class="price">179</span></p>
+                <button onclick="add('Delhi Tikki Sandwich', 179)">Add</button>
+            </div>
+            <div class="item-box">
+                <img src="sub3.avif">
+                <p>Bombay Grill Sandwich - ₹<span class="price">189</span></p>
+                <button onclick="add('Bombay Grill Sandwich', 189)">Add</button>
+            </div>
+            <div class="item-box">
+                <img src="sub4.avif">
+                <p>Cheese Melt Sandwich - ₹<span class="price">279</span></p>
+                <button onclick="add('Cheese Melt Sandwich', 279)">Add</button>
+            </div>
+            <div class="item-box">
+                <img src="sub5.avif">
+                <p>Paneer Achari Sandwich - ₹<span class="price">269</span></p>
+                <button onclick="add('Paneer Achari Sandwich', 269)">Add</button>
+            </div>
+            <div class="item-box">
+                <img src="sub6.avif">
+                <p>Chilli Cheese Sandwich - ₹<span class="price">269</span></p>
+                <button onclick="add('Chilli Cheese Sandwich', 269)">Add</button>
+            </div>
+            <div class="item-box">
+                <img src="sub7.avif">
+                <p>Chicken Tikka Achari Sandwich - ₹<span class="price">269</span></p>
+                <button onclick="add('Chicken Tikka Achari Sandwich', 269)">Add</button>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>CART</h2>
+            <div class="cartItems" id="cartitems"></div>
+            <h3 id="total">Total = ₹0</h3>
+            <button onclick="alert('Order Placed!')">Place Order</button>
+        </section>
+    </body>
+</html>
